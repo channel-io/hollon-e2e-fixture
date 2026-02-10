@@ -11,3 +11,10 @@ export function greet(name: string): string {
 export function reverseString(str: string): string {
   return str.split('').reverse().join('');
 }
+
+/**
+ * Reverses the input string (alternative implementation).
+ */
+export function reverseStringg2zzdz(str: string): string {
+  return str.split('').reverse().join('');
+}
