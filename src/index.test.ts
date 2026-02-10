@@ -1,4 +1,4 @@
-import { greet, reverseString, reverseStringg2zzdz, reverseStringg32ayz } from './index';
+import { greet, reverseString, reverseStringg2zzdz, reverseStringg32ayz, reverseStringg369cm } from './index';
 
 describe('greet', () => {
   it('should return a greeting with the given name', () => {
@@ -77,5 +77,27 @@ describe('reverseStringg32ayz', () => {
 
   it('should reverse string with special characters', () => {
     expect(reverseStringg32ayz('a!@#')).toBe('#@!a');
+  });
+});
+
+describe('reverseStringg369cm', () => {
+  it('should reverse a basic string', () => {
+    expect(reverseStringg369cm('hello')).toBe('olleh');
+  });
+
+  it('should handle empty string', () => {
+    expect(reverseStringg369cm('')).toBe('');
+  });
+
+  it('should handle single character', () => {
+    expect(reverseStringg369cm('a')).toBe('a');
+  });
+
+  it('should reverse string with spaces', () => {
+    expect(reverseStringg369cm('hello world')).toBe('dlrow olleh');
+  });
+
+  it('should reverse string with special characters', () => {
+    expect(reverseStringg369cm('a!@#')).toBe('#@!a');
   });
 });
