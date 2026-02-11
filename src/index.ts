@@ -4,3 +4,5 @@
 export function greet(name: string): string {
   return `Hello, ${name}!`;
 }
+
+export { addNumbersho5nxe } from './math-add';
