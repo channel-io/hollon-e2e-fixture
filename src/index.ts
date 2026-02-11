@@ -6,3 +6,4 @@ export function greet(name: string): string {
 }
 
 export { checkNumhy778w } from './checkNumhy778w';
+export { subSafehy778w } from './subSafehy778w';
