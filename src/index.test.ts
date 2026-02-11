@@ -1,4 +1,4 @@
-import { greet, reverseString, reverseStringg2zzdz, reverseStringg32ayz, reverseStringg69ri6, reverseStringgqir7h, reverseStringhiiacm } from './index';
+import { greet, reverseString, reverseStringg2zzdz, reverseStringg32ayz, reverseStringg69ri6, reverseStringgqir7h, reverseStringhiiacm, reverseStringhiqj2g } from './index';
 
 describe('greet', () => {
   it('should return a greeting with the given name', () => {
@@ -155,5 +155,31 @@ describe('reverseStringhiiacm', () => {
 
   it('should reverse string with unicode characters', () => {
     expect(reverseStringhiiacm('café')).toBe('éfac');
+  });
+});
+
+describe('reverseStringhiqj2g', () => {
+  it('should reverse a basic string', () => {
+    expect(reverseStringhiqj2g('hello')).toBe('olleh');
+  });
+
+  it('should handle empty string', () => {
+    expect(reverseStringhiqj2g('')).toBe('');
+  });
+
+  it('should handle single character', () => {
+    expect(reverseStringhiqj2g('a')).toBe('a');
+  });
+
+  it('should reverse string with spaces', () => {
+    expect(reverseStringhiqj2g('hello world')).toBe('dlrow olleh');
+  });
+
+  it('should reverse string with special characters', () => {
+    expect(reverseStringhiqj2g('a!@#')).toBe('#@!a');
+  });
+
+  it('should reverse string with unicode characters', () => {
+    expect(reverseStringhiqj2g('café')).toBe('éfac');
   });
 });
