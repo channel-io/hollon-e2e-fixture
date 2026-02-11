@@ -1,4 +1,4 @@
-import { greet, reverseString, reverseStringg2zzdz, reverseStringg32ayz, reverseStringg69ri6 } from './index';
+import { greet, reverseString, reverseStringg2zzdz, reverseStringg32ayz, reverseStringg69ri6, reverseStringgqir7h, reverseStringhiiacm } from './index';
 
 describe('greet', () => {
   it('should return a greeting with the given name', () => {
@@ -103,5 +103,57 @@ describe('reverseStringg69ri6', () => {
 
   it('should reverse string with unicode characters', () => {
     expect(reverseStringg69ri6('café')).toBe('éfac');
+  });
+});
+
+describe('reverseStringgqir7h', () => {
+  it('should reverse a basic string', () => {
+    expect(reverseStringgqir7h('hello')).toBe('olleh');
+  });
+
+  it('should handle empty string', () => {
+    expect(reverseStringgqir7h('')).toBe('');
+  });
+
+  it('should handle single character', () => {
+    expect(reverseStringgqir7h('a')).toBe('a');
+  });
+
+  it('should reverse string with spaces', () => {
+    expect(reverseStringgqir7h('hello world')).toBe('dlrow olleh');
+  });
+
+  it('should reverse string with special characters', () => {
+    expect(reverseStringgqir7h('a!@#')).toBe('#@!a');
+  });
+
+  it('should reverse string with unicode characters', () => {
+    expect(reverseStringgqir7h('café')).toBe('éfac');
+  });
+});
+
+describe('reverseStringhiiacm', () => {
+  it('should reverse a basic string', () => {
+    expect(reverseStringhiiacm('hello')).toBe('olleh');
+  });
+
+  it('should handle empty string', () => {
+    expect(reverseStringhiiacm('')).toBe('');
+  });
+
+  it('should handle single character', () => {
+    expect(reverseStringhiiacm('a')).toBe('a');
+  });
+
+  it('should reverse string with spaces', () => {
+    expect(reverseStringhiiacm('hello world')).toBe('dlrow olleh');
+  });
+
+  it('should reverse string with special characters', () => {
+    expect(reverseStringhiiacm('a!@#')).toBe('#@!a');
+  });
+
+  it('should reverse string with unicode characters', () => {
+    expect(reverseStringhiiacm('café')).toBe('éfac');
   });
 });
