@@ -4,3 +4,10 @@
 export function greet(name: string): string {
   return `Hello, ${name}!`;
 }
+
+/**
+ * Reverses the input string.
+ */
+export function reverseStringhxh0u0(str: string): string {
+  return str.split('').reverse().join('');
+}
