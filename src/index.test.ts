@@ -1,4 +1,4 @@
-import { greet, reverseString, reverseStringg2zzdz, reverseStringg32ayz, reverseStringg69ri6, reverseStringgqir7h, reverseStringhiiacm, reverseStringhiqj2g } from './index';
+import { greet, reverseString, reverseStringg2zzdz, reverseStringg32ayz, reverseStringg69ri6, reverseStringgqir7h, reverseStringhiiacm, reverseStringhiqj2g, addNumbershiupbd } from './index';
 
 describe('greet', () => {
   it('should return a greeting with the given name', () => {
@@ -181,5 +181,47 @@ describe('reverseStringhiqj2g', () => {
 
   it('should reverse string with unicode characters', () => {
     expect(reverseStringhiqj2g('café')).toBe('éfac');
+  });
+});
+
+describe('addNumbershiupbd', () => {
+  it('should add two positive numbers', () => {
+    expect(addNumbershiupbd(2, 3)).toBe(5);
+  });
+
+  it('should add two negative numbers', () => {
+    expect(addNumbershiupbd(-2, -3)).toBe(-5);
+  });
+
+  it('should add positive and negative number', () => {
+    expect(addNumbershiupbd(5, -3)).toBe(2);
+  });
+
+  it('should add negative and positive number', () => {
+    expect(addNumbershiupbd(-5, 3)).toBe(-2);
+  });
+
+  it('should handle zero plus number', () => {
+    expect(addNumbershiupbd(0, 5)).toBe(5);
+  });
+
+  it('should handle number plus zero', () => {
+    expect(addNumbershiupbd(5, 0)).toBe(5);
+  });
+
+  it('should handle zero plus zero', () => {
+    expect(addNumbershiupbd(0, 0)).toBe(0);
+  });
+
+  it('should add two decimal numbers', () => {
+    expect(addNumbershiupbd(1.5, 2.3)).toBeCloseTo(3.8);
+  });
+
+  it('should add integer and decimal', () => {
+    expect(addNumbershiupbd(5, 2.5)).toBe(7.5);
+  });
+
+  it('should add two negative decimals', () => {
+    expect(addNumbershiupbd(-1.5, -2.5)).toBe(-4);
   });
 });

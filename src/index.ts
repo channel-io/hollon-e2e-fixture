@@ -53,3 +53,10 @@ export function reverseStringhiiacm(str: string): string {
 export function reverseStringhiqj2g(str: string): string {
   return str.split('').reverse().join('');
 }
+
+/**
+ * Adds two numbers together.
+ */
+export function addNumbershiupbd(a: number, b: number): number {
+  return a + b;
+}
