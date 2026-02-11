@@ -1,4 +1,4 @@
-import { greet, reverseString, reverseStringg2zzdz, reverseStringg32ayz, reverseStringg69ri6, reverseStringgqir7h, reverseStringhiiacm, reverseStringhiqj2g } from './index';
+import { greet, reverseString, reverseStringg2zzdz, reverseStringg32ayz, reverseStringg69ri6, reverseStringgqir7h, reverseStringhiiacm, reverseStringhiqj2g, subtractNumbershiupbd } from './index';
 
 describe('greet', () => {
   it('should return a greeting with the given name', () => {
@@ -181,5 +181,47 @@ describe('reverseStringhiqj2g', () => {
 
   it('should reverse string with unicode characters', () => {
     expect(reverseStringhiqj2g('café')).toBe('éfac');
+  });
+});
+
+describe('subtractNumbershiupbd', () => {
+  it('should subtract two positive numbers', () => {
+    expect(subtractNumbershiupbd(10, 3)).toBe(7);
+  });
+
+  it('should subtract larger number minus smaller', () => {
+    expect(subtractNumbershiupbd(100, 25)).toBe(75);
+  });
+
+  it('should return zero when subtracting equal numbers', () => {
+    expect(subtractNumbershiupbd(5, 5)).toBe(0);
+  });
+
+  it('should handle positive minus negative', () => {
+    expect(subtractNumbershiupbd(10, -5)).toBe(15);
+  });
+
+  it('should handle negative minus positive', () => {
+    expect(subtractNumbershiupbd(-10, 5)).toBe(-15);
+  });
+
+  it('should handle negative minus negative', () => {
+    expect(subtractNumbershiupbd(-10, -3)).toBe(-7);
+  });
+
+  it('should handle decimal numbers', () => {
+    expect(subtractNumbershiupbd(10.5, 3.2)).toBe(7.3);
+  });
+
+  it('should subtract zero', () => {
+    expect(subtractNumbershiupbd(5, 0)).toBe(5);
+  });
+
+  it('should handle zero minus number', () => {
+    expect(subtractNumbershiupbd(0, 5)).toBe(-5);
+  });
+
+  it('should handle zero minus zero', () => {
+    expect(subtractNumbershiupbd(0, 0)).toBe(0);
   });
 });

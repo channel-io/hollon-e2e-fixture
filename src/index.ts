@@ -53,3 +53,10 @@ export function reverseStringhiiacm(str: string): string {
 export function reverseStringhiqj2g(str: string): string {
   return str.split('').reverse().join('');
 }
+
+/**
+ * Subtracts the second number from the first number.
+ */
+export function subtractNumbershiupbd(a: number, b: number): number {
+  return a - b;
+}
