@@ -4,3 +4,8 @@
 export function greet(name: string): string {
   return `Hello, ${name}!`;
 }
+
+/**
+ * Subtracts two numbers and returns their difference.
+ */
+export { subtractNumbershj2tql } from './math-sub';

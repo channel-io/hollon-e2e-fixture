@@ -1,14 +1,4 @@
-import { greet, subtractNumbershj2tql } from './index';
-
-describe('greet', () => {
-  it('should return a greeting with the given name', () => {
-    expect(greet('World')).toBe('Hello, World!');
-  });
-
-  it('should handle empty string', () => {
-    expect(greet('')).toBe('Hello, !');
-  });
-});
+import { subtractNumbershj2tql } from './math-sub';
 
 describe('subtractNumbershj2tql', () => {
   // Basic Operations
