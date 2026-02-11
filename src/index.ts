@@ -4,3 +4,5 @@
 export function greet(name: string): string {
   return `Hello, ${name}!`;
 }
+
+export { checkNumhy778w } from './checkNumhy778w';
